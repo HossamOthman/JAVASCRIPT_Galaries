@@ -21,5 +21,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
             btn.classList.add('carousel__button--selected');
         })
     });
+
+    // select the first item on page load
+    items[0].classList.add('carousel__item--selected');
+    buttons[0].classList.add('carousel__button--selected');
 });
 
