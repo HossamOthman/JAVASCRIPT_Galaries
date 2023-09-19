@@ -15,7 +15,15 @@ imgIndexes.forEach(i => {
     image.classList.add('galleryImg');
 
     image.addEventListener('click', () => {
+        // load the image in div
+        if(i < 10){
+            selectedImage.src = `../img/0${i}.jpg`
+        } else {
+            selectedImage.src = `../img/${i}.jpg`
+        }
+
         // pop up function
+
     });
 
     gallery.appendChild(image);
