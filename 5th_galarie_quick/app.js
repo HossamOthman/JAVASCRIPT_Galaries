@@ -21,10 +21,16 @@ imgIndexes.forEach(i => {
         } else {
             selectedImage.src = `../img/${i}.jpg`
         }
-
+        selectedImage.alt = `Cover of the image number: ${i}`
         // pop up function
-
+        popup.style.transform = 'translateY(0)'
     });
 
     gallery.appendChild(image);
+});
+
+popup.addEventListener('click', () => {
+    popup.style.transform = 'translateY(-100%)';
+    popup.src = '';
+    popup.alt = '';
 });
